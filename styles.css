@@ -1,0 +1,412 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img {
+    display: block;
+}
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+p {
+    font-weight: 400;
+}
+
+
+/* Specific Styles
+///////////////// */
+header, main, footer, .backbone {
+    width: 375px;
+}
+.backbone {
+    background-image: url(./assets/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 5px -250px;
+}
+
+header { 
+    padding: 40px 0px 0px 24px;
+}
+h1 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.454545px;
+    color: #191826;
+    margin-bottom: 20px;
+}
+article p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #191826;
+}
+article {
+    margin: 64px 24px 166px 24px;
+}
+
+    /* //////////
+    section styling
+    ////////// */
+
+section {
+    position: relative;
+    height: 600px;
+}
+section div {
+    border-radius: 12px;
+} 
+[alt=app_image]{
+    width: 209px;
+    height: 430px;
+    position: absolute;
+    top: -97px;
+    left: 80.67px;
+    z-index: 2;
+}
+
+.dark_bg {
+    width: 100%;
+    height: 600px;
+    background-color: #191826;
+    background-image: url(./assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-size: 280px 420px;
+    background-position-x: 48px;
+    position: relative;
+    display: inline-block;
+}
+ /* Styling second div in section - Premium  */
+    .premium h2, h3, h4, p {
+        color: #FCFAF9;
+    }
+    .premium {
+        background-color: #FA7453;
+        padding: 48px 37px 48px 36px;
+        height: 546px;
+        position: absolute;
+        top: 380px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    #caption {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 12px 0px 36px 0px;
+    }
+    h3 {
+        font-size: 65px;
+        line-height: 52px;
+        margin-right: 16px; 
+    }
+    .price p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .android h4 {
+        color: #191826;
+    }
+    .ios, .android {
+        width: 296px;
+        height: 61px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .ios {
+        background-color: #191826;
+        margin-bottom: 16px;
+    }
+    .ios:hover{
+        background-color: #66E2DC;
+    }
+    .android {
+        background-color: #FCFAF9;
+    }
+    .android:hover {
+        background-color: #FFB964;
+    }
+    .premium img {
+        margin-right: 7.8px;
+    }
+
+
+    /* /////////////////
+    Footer styling 
+    ///////////////// */
+
+    footer {
+        margin-top: 390px;
+        height: 333px;
+        padding: 0px 24px 80px 24px;
+    }
+    footer p{
+        font-size: 16px;
+        line-height: 26px;
+        color: #191826;
+        margin: 32px 0px 64px 0px;
+    }
+    .soc_media {
+        display: flex;
+        align-items: center;
+    }
+    [alt=instagram-icon]{
+        margin: 0px 20px 0px 20px;
+    }
+
+    .soc_media img {
+        cursor: pointer;
+    }
+    .soc_media img:hover {
+        filter: invert(71%) sepia(34%) saturate(7144%) hue-rotate(327deg) brightness(103%) contrast(96%);
+    }
+
+
+
+/*
+=======================
+Styling for Tablets 
+=======================*/
+
+@media only screen and (min-width: 768px){
+    header, main, footer, .backbone {
+        width: 768px;
+    }
+
+    .backbone {
+        background-image: url(./assets/bg-main-tablet.png), url(./assets/bg-pattern-1.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 1000px 1000px, 266px 400px;
+        background-position: -230px -241px, right 0 top -32px;
+    }
+
+    header {
+        padding: 62px 0px 0px 39px;
+    }
+    h1 {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.727273px;
+        margin-bottom: 28px;
+    }
+    article p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    article {
+        margin: 95px 209px 249px 39px;
+    }
+
+        /* //////////
+        section styling
+        ////////// */
+    
+    section {
+        padding-left: 33px;
+    }
+    [alt=app_image]{
+        width: 270px;
+        height: 556px;
+        position: absolute;
+        top: -138px;
+        left: 64px;
+        z-index: 2;
+    }
+    
+    .dark_bg {
+        width: 696px;
+        background-position: 229px -31px ;
+    }
+
+
+     /* Styling second div in section - Premium  */
+
+    .premium {
+        z-index: 2;
+        width: 399px;
+        padding: 48px 49px 48px 48px;
+        position: absolute;
+        top: 150px;
+        left: 272px;
+    }
+
+    
+    /* /////////////////
+    Footer styling 
+    ///////////////// */
+
+
+    footer {
+        margin-top: 183px;
+        height: 228px;
+        padding: 0px 39px 85px 33px;
+        position: relative;
+    }
+    footer p{
+        margin-bottom: 0px;
+        width: 366px;
+        display: inline-block;
+    }
+    .soc_media {
+        position: absolute;
+        top: 94px;
+        right: 0;
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=======================
+Styling for Desktops 
+=======================*/
+
+@media only screen and (min-width: 1440px){
+    header, main, footer, .backbone {
+        width: 1440px;
+    }
+    header {
+        padding: 62px 0px 0px 165px;
+    }
+
+
+    .backbone {
+        overflow: hidden;
+        background-image: url(./assets/bg-main-desktop.png), url(./assets/bg-pattern-1.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 1800px 1800px, 312px 468px;
+        background-position: top -200px left -240px, right 0 top -32px;
+    }
+    /* ///////
+    article styling
+    /////// */
+    h1 {
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -1px;
+        margin-bottom: 40px;
+    }
+    article p {
+        font-size: 20px;
+        line-height: 34px;
+        width: 825px;       
+    }
+    article {
+        margin: 127px 260px 321px 164.5px;
+    }
+
+        /* //////////
+        section styling
+        ////////// */
+    
+    section {
+        padding-left: 165px;
+    }
+    [alt=app_image]{
+        width: 304px;
+        height: 640px;
+        position: absolute;
+        top: -218px;
+        left: 102px;
+        z-index: 2;
+    }
+    
+    .dark_bg {
+        width: 1110px;
+        background-position: 336px -40px ;
+    }
+
+    /* Styling second div in section - Premium  */
+    .premium {
+        padding: 48px 37px 48px 36px;
+        width: 446px;
+        height: 625px;
+        top: 90px;
+        left: 710px;
+    }
+    
+    h2 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    #caption {
+        font-size: 20px;
+        line-height: 34px;
+        margin: 22px 0px 39px 0px;
+    }
+
+    .price {
+        margin-bottom: 46px;
+    }
+
+    .ios, .android {
+        width: 333px;
+    }
+
+        /* /////////////////
+    Footer styling 
+    ///////////////// */
+
+    footer {
+        margin-top: 202px;
+        padding: 0px 165px 91px 165px;
+        display: flex;
+        align-items: center;
+    }
+    footer p{
+        margin: 0px 359px 0px 137px;
+    }
+    .soc_media {
+        position: static;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+    
